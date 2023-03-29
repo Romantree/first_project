@@ -7,17 +7,26 @@ body{
     font-family: 'Delicious Handrawn';
     background-color: black;
     width: 1000px;
-    height: 1000px;
+    height: 900px;
+}
+.navbar-dark{
+    
+    margin-left: 950px;
+    width: 200px;
+    opacity: 0.8;
+}
+
+h1{
 }
 .bg-video{
     position: fixed;
     right: 0; bottom:0;
     top: 0; left:0;
-    min-width: 100%; min-height: 100%;
+    min-width: 100%; min-height: 90%;
     width: 90%;
     height: 90%;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .__content{
@@ -28,11 +37,12 @@ body{
 
 #logo{
     position: relative;
-    display: flex;
-    float: right;
+    display: inline-block;
+    margin-left: 66px;
     bottom: 86px;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    opacity: 0.3;
 }
 
 #wrap{
@@ -66,21 +76,18 @@ body{
 #header > .container{
     position: relative;
 }
-
 #header h1{
     font-size: 2.4rem;
     margin: 0;
 }
-.nav-select{
-    position: relative;
-   margin-top: 10px;
+.dropdown{
+    position: absolute;
     left: 100px;
-   float: right;
-    
+    float: right;   
 }
 
 #nav .nav-item a{
-    color: rgba(255, 255, 255, 0.5);
+
 	font-weight: 700;
 	letter-spacing: .09em;
 	vertical-align: middle;
@@ -132,20 +139,21 @@ body{
     color: white;
 }
 .main-content p.main-title{
-
+    
+    margin-left: 60px;
     font-size: 10vmin;
     font-weight: 550;
-    line-height: 95%;
+    line-height: 60%;
     
 }
 .main-content p.sub-title{
     font-size :2.4vmin;
+    margin-left: 60px;
     
 }
-.main-content a.button{
-    display: inline-block;
+.main-content a{
+    margin-left: 60px;
     color: white;
-    margin: 0 auto;
     font-size: 1.6rem;
     font-weight: 700;
    
@@ -166,9 +174,26 @@ body{
 ul{
     list-style: none;
 }
+
+.info{
+    font-family: 'PilseungGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/PilseungGothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;  
+}
 .footer{
     display:flex;
-  
+    float:right;
+    position: fixed;
+    margin-left: 20px;
+    display: inline;
     color: white;
+     
+}
+.footerselect{
+    display:flex;
     
+    position: relative;
+    margin-left: 950px;
+    margin-top:30px;
 }

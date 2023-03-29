@@ -7,8 +7,9 @@
     font-family: 'Delicious Handrawn';
 }
 .miyavipicture{
-    width: 500px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
+    padding-left: 10px
 }
 
 
@@ -120,8 +121,8 @@ body{
     text-align: center;
     line-height: 80px;
 } */
-.bottom{
-   
+/* .bottom{
+
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -129,5 +130,13 @@ body{
     width: 30%;
     height: 30%;
     margin-bottom :300px;
+} */
+
+.profilbox{
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 500px;
+    height: 400px;
 }
 
