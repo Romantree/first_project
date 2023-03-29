@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+
+    </style>
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+  </style>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Smokum&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="project_2th_1-1수정.css">
+</head>
+<body>
+    <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="MIYAVI  Telecaster _ Fender.mp4" type="video/mp4">
+            <p>이것은 비디오</p>
+        </video> 
+    </div> <!--비디오 div-->
+    <div id="wrap">
+        <div id="header" class="home">
+            <div class="container">
+                <div id="nav">
+                    <div class="nav-overlay"></div>
+                    <div class="nav-icon">
+                        <div class="logo">
+                        <h1 class>
+                            <a href="/" class="nav-menu active" style="color: antiquewhite;">ANGEL AUDITION</a>
+                        </h1>
+                        </div>
+                        <img src="angellogo2.png" id="logo">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+        
+                    <div class="nav-bar">
+                        <div class="nav-item">
+                            <a href ="" class="active">Home</a>
+                            <a href ="" class="active">APPLY</a>
+                            <a href ="" class="active">Q&A</a>
+                            <a href ="" class="active">NOTICE</a>
+                            <a href ="" class="active">Home</a>
+                            <a href ="" class="active">APPLY</a>
+                            <a href ="" class="active">Q&A</a>
+                            <a href ="" class="active">NOTICE</a>
+                            <a href ="" class="active">Q&A</a>
+                        </div>
+                    <div class="nav-item">
+                        <select id="sle_lang" name="sel_lang" class="nav-select" style="width:60px">
+                            <option value="kr" selected >KOR</option>
+                            <option value="en"  >ENG</option>
+                            <option value="cn"  >CHN</option>
+                            <option value="jp"  >JPN</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section main">
+            <div class="main-content">
+                <p class="main-title">
+                "VIBE"
+                <br>
+                "THE NEW"
+                <br>
+                "FLOW"
+                </p>
+                <p class="sub-title">ANGEL COMPANY</p>
+                <a class="button" ag-white large href="apply">오디션 지원하기
+                </a><br>
+                <a href="" class="email">Sooho77@naver.com</a><br>
+                <a href="https://www.facebook.com/ygaudition/"class="icon facebook" class="sns">facebook</a>
+                <a href="https://www.instagram.com/ygaudition/"class="icon instagram" class="sns">instagram</a>
+            </div>
+        </div> <!--wrap div-->
+             </div>
+             
+             <div class="footer">
+                <span> 주소주소 </span>
+                <span> 주소주소 </span>
+                <span> 주소주소 </span>
+            </div>
+        
+   
+
+  
+
+
+
+
+
+    <script >
+        $(document).ready(function(){
+            //*/*// > mobile navigation
+            $('.nav-icon').click(function(){
+                $(this).toggleClass('animate-icon');
+                //$('#popup-notice').fadeToggle();
+                $('.nav-overlay').fadeToggle();
+                $('.nav-bar').toggleClass('active');
+                $("body").toggleClass('fix');
+            });
+            $('.nav-item a').click(function(){
+                $('.nav-icon').removeClass('animate-icon');
+                $('.nav-bar').removeClass('active');
+                $("body").toggleClass('fix');
+                $('.nav-overlay').fadeToggle();
+                //$('#popup-notice').fadeToggle();
+            });
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                //console.log(scroll);
+                if (scroll >= 50) {
+                    //console.log('a');
+                    $("#header").addClass("home");
+                } else {
+                    //console.log('a');
+                    $("#header").removeClass("home");
+                }
+            });
+    //        $(window).scroll(function() {
+    //            if ($("#header").offset().top > 10) {
+    //                $("#header").addClass("home");
+    //            } else {
+    //                $("#header").removeClass("home");
+    //            }
+    //        });
+        });
+    
+        // 현재 페이지에서 언어만 변경
+        function change_lang(lang) {
+            var now_url = "/";
+            $.ajax({
+                cache: false,
+                url: "/intro/ajax_change_lang",
+                dataType: "json",
+                type: "POST",
+                data: { "lang": lang },
+                success: function (data) {
+                    console.log(JSON.stringify(data));
+                    location.href = now_url;
+                },
+                error: function (err) {
+                    console.log(JSON.stringify(err));
+                    alert(JSON.stringify(err));
+                }
+            });
+            return false;
+        }
+    
+        $('#sel_lang').on('change', function (){
+            var lang  = $(this).val();
+            var now_url = "/";
+            $.ajax({
+                cache: false,
+                url: "/intro/ajax_change_lang",
+                dataType: "json",
+                type: "POST",
+                data: { "lang": lang },
+                success: function (data) {
+                    console.log(JSON.stringify(data));
+                    location.href = now_url;
+                },
+                error: function (err) {
+                    console.log(JSON.stringify(err));
+                    alert(JSON.stringify(err));
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>
