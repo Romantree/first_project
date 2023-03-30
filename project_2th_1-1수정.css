@@ -7,24 +7,29 @@ body{
     font-family: 'Delicious Handrawn';
     background-color: black;
     width: 1000px;
-    height: 900px;
+    height: 850px;
 }
 .navbar-dark{
-    
-    margin-left: 950px;
+    margin-left: 1100px;
     width: 200px;
     opacity: 0.8;
 }
 
-h1{
+
+#logfont{
+    position: relative;
+    left: 50px;
 }
+
+
 .bg-video{
+    margin-top: 100px;
     position: fixed;
     right: 0; bottom:0;
     top: 0; left:0;
-    min-width: 100%; min-height: 90%;
+    min-width: 100%; min-height:100% ;
     width: 90%;
-    height: 90%;
+    height: 100%;
     z-index: -1;
     opacity: 0.5;
 }
@@ -37,18 +42,23 @@ h1{
 
 #logo{
     position: relative;
-    display: inline-block;
-    margin-left: 66px;
-    bottom: 86px;
-    width: 90px;
+    margin-left:150px;
+    bottom: 120px;
+    width: 120px;
     height: 90px;
-    opacity: 0.3;
+    opacity: 0.9;
 }
+#companyfont{
+    position: relative;
+    right: 100px;
+}
+
+
 
 #wrap{
     position: relative;
     width: 100%;
-    height: 40%;
+    height: 50%;
     
 }
 
@@ -182,18 +192,16 @@ ul{
     font-style: normal;  
 }
 .footer{
-    display:flex;
-    float:right;
+    margin-top: 20pt;
     position: fixed;
     margin-left: 20px;
-    display: inline;
+   
     color: white;
      
 }
 .footerselect{
     display:flex;
-    
     position: relative;
-    margin-left: 950px;
+    margin-left: 1100px;
     margin-top:30px;
 }
