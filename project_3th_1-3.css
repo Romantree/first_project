@@ -43,6 +43,7 @@ body{
     margin: 0 auto;
     padding : 2rem 0;
 }
+
 #header{
     
     position: absolute;
@@ -308,5 +309,8 @@ ul {
     position: relative;
     margin-left: 1100px;
     margin-top: 400px;
+}
+
+img{
    
 }
