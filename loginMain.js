@@ -1,6 +1,4 @@
 
-console.log('로그인시작');
-console.log(document);
 
 var signinButton = document.getElementById('loginbutton')
 signinButton.addEventListener('click',signinFunc);
@@ -25,35 +23,31 @@ function signinFunc(){
 // const inputPw = document.getElementById('loginpassword');
 // const btnLogin = document.getElementById('loginbutton');
 
+window.onload = () => {
 
-function tryLogin(){
+    const btn = document.getElementById('loginbutton');
+    const inputId = document.getElementById('loginEmail');
+    const inputPw = document.getElementById('loginpassword');
+    const inputChk = document.getElementById('checkIdSave');
 
-
-    inputId.value='';
-    inputPw.value='';
-}
-inputId.addEventListener('keydown',
-function(e){
-
-        console.log(e);
-    // console.log(e.keyCode);//13 enter
-    if(e.keyCode == 13){           
-        console.log('엔터가 눌렸다.');
-        inputPw.focus();
+    let loginId_LocalStorage = localStorage.getItem('loginEmail');
+    console.log(loginId_LocalStorage);
+ 
+    if (loginId_LocalStorage != '' && loginId_LocalStorage != null) {
+      inputId.value = loginId_LocalStorage; 
+      inputChk.checked = true;
     }
-}
-);
-inputPw.addEventListener('keydown',
-function(e){
 
-    if(e.keyCode == 13){
-        console.log('엔터가 눌렸다.');
-      
-        btnLogin.click();
+    btn.addEventListener('click', function () {   
+      if (inputChk.checked == true) {
+        console.log(inputChk.checked);
+        localStorage.setItem('loginEmail', inputId.value);
+      } else {
+        console.log(inputChk.checked);
+        localStorage.removeItem('loginEmail');
+      }
 
-            
-}
-}
-);
-
-
+      inputId.value = ''; 
+      inputPw.value = ''; 
+    });
+  }
