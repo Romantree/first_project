@@ -1,0 +1,209 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    font-family: 'Delicious Handrawn';
+    background-color: black;
+    margin: 0;
+    padding: 0;
+   
+}
+.navbar-dark{
+    margin-left: 1100px;
+    width: 200px;
+    opacity: 0.8;
+}
+
+
+#logfont{
+    position: relative;
+    left: 50px;
+}
+
+
+.bg-video{
+    margin-top: 100px;
+    position: fixed;
+    right: 0; bottom:0;
+    top: 0; left:0;
+    min-width: 100%; min-height:100% ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.__content{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+#logo{
+    position: relative;
+    margin-left:150px;
+    bottom: 120px;
+    width: 120px;
+    height: 90px;
+    opacity: 0.9;
+}
+#companyfont{
+    position: relative;
+    right: 100px;
+}
+
+
+
+#wrap{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: fixed;
+    padding : 2rem 0;
+}
+#header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: left;
+    z-index: 3;
+}
+
+#header {
+    position: fixed;
+    /* background-color:  rgba(0,0,0,1) !important; */
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#header > .container{
+    position: relative;
+}
+#header h1{
+    font-size: 2.4rem;
+    margin: 0;
+}
+.dropdown{
+    position: absolute;
+    left: 100px;
+    float: right;   
+}
+
+#nav .nav-item a{
+
+	font-weight: 700;
+	letter-spacing: .09em;
+	vertical-align: middle;
+	text-decoration: none;
+}
+#nav .nav-item a.active{
+	color:white;
+    font-size: 1.4rem;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    margin: 20px;  
+}
+#nav .nav-item.user a:before{
+    content: '/';
+    padding-left: .5rem;
+    padding-right: .5rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+#nav .nav-item.user a:first-child:before{
+    display: none;
+}
+
+.main{
+    position: relative;
+    z-index: 2;
+}
+
+.main-content {
+    display: table-cell;
+    width: 100%;
+    height: calc(100vh - 58px -12rem);
+    vertical-align: middle;
+    color:white
+    
+}
+.main-content{
+    display: inline-block;
+    top: 330px;
+    position: relative;
+}
+
+
+.main-content > p{
+    margin-bottom: 1rem;
+}
+.main-content > a{
+    margin-bottom: 3rem;
+    color: white;
+}
+.main-content p.main-title{
+    
+    margin-left: 60px;
+    font-size: 10vmin;
+    font-weight: 550;
+    line-height: 60%;
+    
+}
+.main-content p.sub-title{
+    font-size :2.4vmin;
+    margin-left: 60px;
+    
+}
+.main-content a{
+    margin-left: 60px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+   
+}
+
+.planbox{
+    display: flex;
+    float: right;
+    border: 2px solid black;
+    margin: 2px;
+    font-size: 1.5rem;
+    position: relative;
+     align-items: center;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+ul{
+    list-style: none;
+}
+
+.info{
+    font-family: 'PilseungGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/PilseungGothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;  
+}
+.footer{
+    margin-top: 20pt;
+    position: fixed;
+    margin-left: 20px;
+   
+    color: white;
+     
+}
+.footerselect{
+    display:flex;
+    position: relative;
+    margin-left: 1100px;
+    margin-top:30px;
+}

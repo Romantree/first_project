@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN MAIN</title>
+
+
+ 
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="loginMain.css">
+    <link rel="stylesheet" href="loginflower.css">
+    
+</head>
+<body>
+
+    <!-- notice 영역 -->
+<div style="background-color:rgb(253, 244, 245); padding: 5px;">
+    <h4 style="text-align: center;">HOME</h4>
+</div>
+
+<!-- header 영역 -->
+<header id="header">
+    <div class="frame" id="frame">
+        <div class="center">
+          <div class="circle" id="circle">
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+          </div>
+        </div>
+      </div>
+      <div class="frame2" id="frame">
+        <div class="center">
+          <div class="circle"  id="circle">
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+          </div>
+        </div>
+      </div>
+    <h1>ANGEL COMPANY</h1>
+    <p>With a <strong>Company</strong> AG</p>
+</header>
+<!-- navigation bar -->
+<nav>
+    <a href="poster.html">AUDITION</a>
+    <a href="MainHome.html">HOME</a>
+    <a href="Introduce.html">ARTIST</a>
+    <a href="#">Q&A</a>
+    <a href="#">LOGIN</a>
+</nav>
+<!-- 콘텐츠 영역 -->
+<!-- 메인 비디오 -->
+<main>
+
+    <div class="m_slider">
+        <div class="inner_wrap">
+           
+                <div class="content">
+                   <header>Login </header>
+                   <form action="#">
+                      <div class="field">
+                         <span class="fa fa-user"></span>
+                         <input id="loginEmail"type="text" required placeholder="Email or Phone">
+                      </div>
+                      <div class="field space">
+                         <span class="fa fa-lock"></span>
+                         <input type="password" class="pass-key" required placeholder="Password" id="loginpassword">
+                         <span class="show">SHOW</span>
+                      </div>
+                      <div class="pass">
+                         <a href="#">비밀번호를 잊어버리셨나요?</a>
+                      </div>
+                      <button class="custom-btn btn-8" id="loginbutton"  onclick="tryLogin()"><span style="font-size:23px; color: white;">Login</span></button>
+                   </form>
+                   <div class="login">
+                      Or login with
+                   </div>
+                   <div class="links">
+                      <div class="facebook">
+                         <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                      </div>
+                      <div class="instagram">
+                         <i class="fab fa-instagram"><span>Instagram</span></i>
+                      </div>
+                   </div>
+                   <div class="signup">
+                      Don't have account?
+                      <a href="#">Signup Now</a>
+                   </div>
+                 
+                    <div class="box">
+                        <div class="bellWrapper">
+                          <i class="fas fa-bell my-bell"></i>
+                        </div>
+                        <div class="circle2 first"></div>
+                        <div class="circle2 second"></div>
+                        <div class="circle2 third"></div>
+                    </div>
+                 
+                </div>
+            
+             </div>
+    </div>
+   
+</main>
+
+
+
+
+
+<div class="contents_bottom">
+    <h2 style="font-size: 40px;">Today News</h2>
+    <section class="i_slider02">
+        <img src="blackpink.png">
+      </section>
+    <section class="notice">
+        <img src="audition.png"></section>
+    <section class="service">
+        <h4>열정</h4>
+        <h1>우리가 원하는 인재의 모습</h1>
+        <span>열정
+            우리가 원하는 인재의 모습
+            자신의 일을 진심으로 좋아하는 사람은 타협하지 않는 스스로의 ‘높은 기준’으로 
+            최고의 결과를 만들기 위해 몰입하며, 근본적인 해결책을 찾기 위해 고민하고 
+            ‘끊임 없는 개선’을 시도합니다.</span>
+    </section>
+
+</div>
+<footer>
+    <div class="sitemap">
+        <div class="inner_wrap" style="background-color: rgb(186, 144, 198);">
+            <div class="ag_sns_list">
+				<p>OFFICIAL ANGEL COMPANY SOCIAL NETWORKS</p>
+				<ul class="sns_list" >
+					<li><a href="http://www.youtube.com/YGEntertainment" target="_blank"><span class="ico youtube" style="text-decoration: none;" >youtube</span></a></li>
+					<li><a href="http://www.facebook.com/ygfamily" target="_blank" style="text-decoration: none;"><span class="ico sns">facebook</span></a></li>					
+					<li><a href="http://twitter.com/ygent_official" target="_blank" style="text-decoration: none;"><span class="ico twitter" >twitter</span></a></li>
+					<li><a href="http://www.instagram.com/yg_ent_official" target="_blank" style="text-decoration: none;"><span class="ico insta">instagram</span></a></li>
+				</ul>
+			</div><!-- //yg-sns-list -->
+        </div>
+    </div>
+    <div class="f_top">
+        <div class="inner_wrap" style="background-color:  rgb(232, 160, 191);"> <p>ANGEL COMPANY</p> </div>
+    </div>
+</footer>
+
+<aside class="chat">채팅</aside>
+    
+
+
+<script>
+const pass_field = document.querySelector('.pass-key');
+    const showBtn = document.querySelector('.show');
+    showBtn.addEventListener('click', function(){
+     if(pass_field.type === "password"){
+       pass_field.type = "text";
+       showBtn.textContent = "HIDE";
+       showBtn.style.color = "#3498db";
+     }else{
+       pass_field.type = "password";
+       showBtn.textContent = "SHOW";
+       showBtn.style.color = "#222";
+     }
+    });
+
+</script>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="loginMain.js"> </script>
+<script src="loginflower.js"></script>
+
+<script>
+   
+  $(window).load(function () {
+     $('body').sakura();
+  });  
+</script>
+
+</body>
+</html>
