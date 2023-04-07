@@ -49,5 +49,6 @@ window.onload = () => {
 
       inputId.value = ''; 
       inputPw.value = ''; 
+    
     });
   }
